@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="@dimen/marginSmall">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:padding="@dimen/marginSmall">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="start"
+                android:hint="请输入要生成二维码的字符"
+                android:paddingRight="43dp"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/btnDeleteSize"
+            android:layout_height="@dimen/btnDeleteSize"
+            android:background="@drawable/btn_delete_selector" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/marginSmall"
+        android:background="@null"
+        android:gravity="right"
+        android:paddingBottom="@dimen/marginSmall"
+        android:text="当前已输入0个字符"
+        android:textSize="@dimen/textsizeSmall"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/bg"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_width="@dimen/qrcodeGeneratedSize"
+            android:layout_height="@dimen/qrcodeGeneratedSize">
+
+            <ImageView
+                android:id="@+id/ivGenerated"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:scaleType="fitXY" />
+
+            <Button
+                android:id="@+id/btnGenerate"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/genarat"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDiscard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_save_selector"
+            android:text="@string/discard"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/marginSmall"
+            android:layout_weight="1"
+            android:background="@drawable/btn_save_selector"
+            android:text="@string/save"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

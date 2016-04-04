@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "E:\\studioWorkspace\\MyEventButterKnife\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\photo_over.png",
+        "source": "E:\\studioWorkspace\\MyEventButterKnife\\app\\src\\main\\res\\mipmap-hdpi\\photo_over.png"
+    },
+    {
+        "merged": "E:\\studioWorkspace\\MyEventButterKnife\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "E:\\studioWorkspace\\MyEventButterKnife\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\studioWorkspace\\MyEventButterKnife\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\chat.png",
+        "source": "E:\\studioWorkspace\\MyEventButterKnife\\app\\src\\main\\res\\mipmap-hdpi\\chat.png"
+    },
+    {
+        "merged": "E:\\studioWorkspace\\MyEventButterKnife\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\videocall.png",
+        "source": "E:\\studioWorkspace\\MyEventButterKnife\\app\\src\\main\\res\\mipmap-hdpi\\videocall.png"
+    },
+    {
+        "merged": "E:\\studioWorkspace\\MyEventButterKnife\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher2.png",
+        "source": "E:\\studioWorkspace\\MyEventButterKnife\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher2.png"
+    }
+]

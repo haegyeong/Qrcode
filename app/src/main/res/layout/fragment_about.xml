@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="match_parent"
+    android:background="#57A9B2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/videocall"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:src="@mipmap/videocall" />
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher2" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/chat"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:src="@mipmap/chat" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/qrbg"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="二维码调色板"
+            android:textSize="28sp" />
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/red"
+            android:layout_alignParentLeft="true"
+            android:text="红色"
+            android:textSize="22sp" />
+
+        <SeekBar
+            android:id="@+id/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qrbg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/tv1"
+            android:indeterminate="false"
+            android:max="255" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/green"
+            android:layout_alignParentLeft="true"
+            android:text="绿色"
+            android:textSize="22sp" />
+
+        <SeekBar
+            android:id="@+id/green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/red"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/tv1"
+            android:indeterminate="false"
+            android:max="255" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/blue"
+            android:layout_alignParentLeft="true"
+            android:text="蓝色"
+            android:textSize="22sp" />
+
+        <SeekBar
+            android:id="@+id/blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/green"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/tv1"
+            android:indeterminate="false"
+            android:max="255" />
+    </RelativeLayout>
+
+</LinearLayout>

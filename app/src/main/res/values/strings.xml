@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">二维码管家</string>
+    <string name="generateQRCode">GET IT !</string>
+    <string name="discard">丢  弃</string>
+    <string name="save">保  存</string>
+    <string name="scan">开始扫描</string>
+    <string name="scannedText">扫码生成的文字</string>
+    <string name="noData">暂无数据</string>
+    <string name="defaultDate">0000-00-00 00:00</string>
+    <string name="defaultCodeText">这是二维码对应的文字，这是二维码对应的文字</string>
+</resources>

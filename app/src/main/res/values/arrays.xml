@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tabs">
+        <item>生成</item>
+        <item>扫码</item>
+        <item>历史</item>
+        <item>设置</item>
+    </string-array>
+</resources>
